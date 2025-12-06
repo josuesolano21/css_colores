@@ -1,0 +1,36 @@
+        .contenedor {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .caja {
+            width: 120px;
+            height: 120px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        /* 1. Color por nombre */
+        .color-nombre {
+            background-color: blue;
+        }
+
+        /* 2. Color en hexadecimal */
+        .color-hex {
+            background-color: #FF5722;
+        }
+
+        /* 3. Color en RGB */
+        .color-rgb {
+            background-color: rgb(50, 150, 250);
+        }
+
+        /* 4. Color en RGBA (con transparencia) */
+        .color-rgba {
+            background-color: rgba(0, 200, 100, 0.6);
+        }
