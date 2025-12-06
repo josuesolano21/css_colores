@@ -1,7 +1,19 @@
+        html, body {
+            height: 100%; /* Permite que body ocupe toda la altura de la página */
+            margin: 0;    /* Elimina márgenes que pueden generar espacios en blanco */
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
         .contenedor {
             display: flex;
             gap: 20px;
-            padding: 20px;
+            justify-content: center;
+            margin-bottom: 40px;
         }
 
         .caja {
@@ -30,7 +42,68 @@
             background-color: rgb(50, 150, 250);
         }
 
-        /* 4. Color en RGBA (con transparencia) */
+        /* 4. Color en RGBA */
         .color-rgba {
             background-color: rgba(0, 200, 100, 0.6);
+        }
+
+        /* Contenedor con gradiente lineal */
+        .contenedor-gradiente {
+            width: 500px;
+            height: 150px;
+            margin: 0 auto;
+            background: linear-gradient(90deg, blue, orange);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            border-radius: 15px;
+        }
+
+        body{
+            background-image: url('./Recursos/digital-art-background-98hwar6swibxmlqv.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .caja-transparente {
+        width: 200px;
+        height: 150px;
+        margin: 20px auto;
+        background-color: rgba(255, 0, 0, 0.5); /* Rojo con 50% de transparencia */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+        border-radius: 15px;
+}
+
+/* 5. Hexadecimal vs RGB - cajas independientes */
+        .caja-hex {
+            width: 150px;
+            height: 150px;
+            margin: 20px auto;
+            background-color: #1E90FF;   /* Hexadecimal */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            border-radius: 15px;
+        }
+
+        .caja-rgb {
+            width: 150px;
+            height: 150px;
+            margin: 20px auto;
+            background-color: rgb(30,144,255); /* RGB equivalente */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            border-radius: 15px;
         }
